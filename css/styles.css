@@ -1,214 +1,196 @@
-/* Global Styles */
+/* General Reset */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333333;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif; /* Modern font */
+    background-color: #f9f9f9;
+    line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Navbar Styles */
+/* Navbar */
 .navbar {
-    background-color: #2A52BE;
-    color: #ffffff;
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #1a1a1a; /* Darker for contrast */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
 .navbar .logo img {
-    height: 50px;
+    height: 60px; /* Slightly larger for impact */
 }
-
 .nav-links {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 1.5rem;
+    gap: 20px;
 }
-
 .nav-links a {
+    color: white;
     text-decoration: none;
-    color: #ffffff;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
-
 .nav-links a:hover {
-    color: #FFC107; /* Accent color */
+    color: #00bcd4; /* Fun accent color */
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 .hero {
-    background-color: #2A52BE;
-    color: #ffffff;
+    background: linear-gradient(135deg, #00bcd4, #1a1a1a);
+    color: white;
     text-align: center;
-    padding: 4rem 0;
+    padding: 80px 20px;
 }
-
 .hero img {
-    width: 200px;
-    margin-bottom: 1.5rem;
+    height: 120px;
+    margin-bottom: 20px;
 }
-
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 3em;
+    margin: 20px 0;
 }
-
 .hero p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
-
-.btn-primary {
-    background-color: #FFC107;
-    color: #2A52BE;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 4px;
+.hero-buttons a {
     display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.hero-buttons .btn-primary {
+    background-color: #00bcd4;
+    color: white;
+}
+.hero-buttons .btn-secondary {
+    background-color: white;
+    color: #00bcd4;
+}
+.hero-buttons a:hover {
+    background-color: #1a1a1a;
+    color: white;
 }
 
-.btn-primary:hover {
-    background-color: #FFD54F;
-}
-
-/* Services Section Styles */
+/* Services Section */
 .services {
-    padding: 4rem 0;
-    background-color: #F5F5F5;
+    padding: 50px 20px;
+    background-color: #f1f1f1;
 }
-
 .services h2 {
-    text-align: center;
-    color: #2A52BE;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
-
 .services-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
-
 .service-item {
-    background-color: #ffffff;
-    padding: 2rem;
-    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
 .service-item img {
-    width: 150px;
-    margin-bottom: 1.5rem;
+    height: 100px;
+    margin-bottom: 20px;
 }
-
 .service-item h3 {
-    margin-bottom: 1rem;
-    font-size: 1.75rem;
-    color: #2A52BE;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
-
 .service-item p {
-    font-size: 1rem;
-    color: #666666;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+.service-item .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.service-item .btn-primary:hover {
+    background-color: #1a1a1a;
 }
 
-/* About Section Styles */
-.about {
-    padding: 4rem 0;
-}
-
-.about h2 {
-    text-align: center;
-    color: #2A52BE;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.about p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    font-size: 1.125rem;
-    color: #333333;
-}
-
-/* Contact Section Styles */
+/* Contact Section */
 .contact {
-    padding: 4rem 0;
-    background-color: #F5F5F5;
+    padding: 50px 20px;
+    background-color: #e8f5fe;
 }
-
 .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
     text-align: center;
-    color: #2A52BE;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
 }
-
 .contact form {
     max-width: 600px;
     margin: 0 auto;
 }
-
-.form-group {
-    margin-bottom: 1.5rem;
+.contact form .form-group {
+    margin-bottom: 20px;
 }
-
-.form-group label {
+.contact form label {
     display: block;
-    margin-bottom: 0.5rem;
-    color: #333333;
+    margin-bottom: 8px;
     font-weight: bold;
 }
-
-.form-group input,
-.form-group textarea {
+.contact form input,
+.contact form textarea {
     width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    font-size: 1rem;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
 }
-
-.form-group textarea {
+.contact form textarea {
     resize: vertical;
-    min-height: 150px;
+    height: 120px;
 }
-
-button {
-    display: inline-block;
-    background-color: #2A52BE;
-    color: #ffffff;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
+.contact form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 1.2em;
     font-weight: bold;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact form button:hover {
+    background-color: #1a1a1a;
 }
 
-button:hover {
-    background-color: #334B8E;
-}
-
-/* Footer Styles */
+/* Footer */
 .footer {
-    background-color: #2A52BE;
-    color: #ffffff;
+    background-color: #1a1a1a;
+    color: white;
     text-align: center;
-    padding: 2rem 0;
+    padding: 20px 0;
+}
+.footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.footer .social-links a:hover {
+    color: #00bcd4;
 }
