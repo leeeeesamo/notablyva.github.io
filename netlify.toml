@@ -4,3 +4,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-image-optim" # Example plugin for image optimization
+
+[[redirects]]
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
