@@ -11,9 +11,10 @@ body {
 
 /* Header Section */
 header {
-  background-color: #030822; /* Match logo background */
+  background: linear-gradient(135deg, #020726, #5a2a82); /* dark blue to purple */
   padding: 40px 20px 30px;
-  color: white;
+  color: #fff;
+  text-align: center;
 }
 
 .main-logo {
