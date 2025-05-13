@@ -11,7 +11,7 @@ body {
 
 /* Header Section */
 header {
-  background-color: #030822; /* Deep logo blue */
+  background-color: #030822; /* Match logo background */
   padding: 40px 20px 30px;
   color: white;
 }
@@ -23,7 +23,6 @@ header {
   display: block;
 }
 
-/* Tagline */
 .tagline {
   font-size: 2rem;
   font-weight: 600;
@@ -37,23 +36,33 @@ header {
   max-width: 1100px;
   margin: auto;
 }
+
 .services h3 {
-  font-size: 2.5em;
+  font-size: 2rem; /* smaller title */
   margin-bottom: 30px;
 }
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
+
 .service-item {
   background: white;
   border-radius: 10px;
-  padding: 25px;
+  padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.15rem;
+  line-height: 1.7;
 }
+
+.service-item strong {
+  font-size: 1.2rem;
+}
+
 .service-icon {
-  width: 100px;
+  width: 120px;
   height: auto;
   margin-bottom: 15px;
 }
@@ -66,6 +75,7 @@ header {
   text-align: center;
   margin-top: 60px;
 }
+
 .contact form {
   max-width: 600px;
   margin: auto;
@@ -74,14 +84,17 @@ header {
   border-radius: 10px;
   color: black;
 }
+
 .contact form .form-group {
   margin-bottom: 15px;
 }
+
 .contact form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
+
 .contact input,
 .contact textarea {
   width: 90%;
@@ -92,6 +105,7 @@ header {
   border-radius: 5px;
   font-size: 1rem;
 }
+
 .contact button {
   padding: 10px 20px;
   background-color: #f89406;
@@ -100,6 +114,7 @@ header {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .contact button:hover {
   background-color: #e67e22;
 }
