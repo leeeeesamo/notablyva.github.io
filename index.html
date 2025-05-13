@@ -1,104 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Top Notch Virtual Assistance</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Notch Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Header -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo-wrapper">
-        <a href="index.html" class="logo">
-          <img src="images/TopNotch_Main.png" alt="Top Notch Logo" />
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+    <header>
+        <img src="TopNotch_Main2.png" alt="Top Notch Logo" class="main-logo">
+        <h2 class="tagline">Versatile. Reliable. Top Notch.</h2>
+    </header>
 
-  <!-- Hero Section -->
-  <header class="hero hero-home">
-    <div class="hero-content">
-      <h1>Top Notch Virtual Assistance</h1>
-      <p class="tagline">"Efficient. Reliable. Professional."</p>
-      <a href="#services" class="btn-primary">Explore Our Services</a>
-    </div>
-  </header>
+    <section class="services">
+        <h3>Our Services</h3>
+        <ul>
+            <li><strong>Executive Assistance</strong> – Efficient daily operations, professional correspondence, and administrative organization.</li>
+            <li><strong>Customer Service</strong> – Client engagement, service coordination, and proactive problem-solving.</li>
+            <li><strong>Marketing Support</strong> – Brand communication, digital presence, and promotional outreach.</li>
+        </ul>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>Who We Are</h2>
-      <p>
-        At Top Notch Virtual Assistance, we specialize in providing high-quality remote support to busy entrepreneurs, executives, and teams. Our services are designed to help you focus on what matters most—while we take care of the rest.
-      </p>
-    </div>
-  </section>
+    <section class="contact">
+        <h3>Contact Us</h3>
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <p><input type="text" name="name" placeholder="Your Name" required></p>
+            <p><input type="email" name="email" placeholder="Your Email" required></p>
+            <p><textarea name="message" placeholder="Your Message" rows="5" required></textarea></p>
+            <p><button type="submit">Send</button></p>
+        </form>
+    </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Our Virtual Assistance Services</h2>
-      <div class="services-grid">
-        <div class="service-item">
-          <img src="images/ExecAssist.png" alt="Executive Assistance" class="service-icon" />
-          <h3>Executive Assistance</h3>
-          <p>Professional support with scheduling, inbox management, task coordination, and administrative follow-up.</p>
-        </div>
-        <div class="service-item">
-          <img src="images/customerasssit.png" alt="Customer Support" class="service-icon" />
-          <h3>Customer Support</h3>
-          <p>Provide polished and prompt email/chat/phone customer service tailored to your brand’s tone and process.</p>
-        </div>
-        <div class="service-item">
-          <img src="images/marketing.png" alt="Marketing Support" class="service-icon" />
-          <h3>Marketing Support</h3>
-          <p>Social media scheduling, lead generation research, newsletter formatting, and CRM data entry.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form action="https://formspree.io/f/xjkbokvw" method="POST">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 Top Notch Virtual Assistance. All Rights Reserved.</p>
-      <div class="social-links">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Top Notch Solutions. All rights reserved.</p>
+    </footer>
 </body>
 </html>
