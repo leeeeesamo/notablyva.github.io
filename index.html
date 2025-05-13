@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Notch Solutions</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Notch Solutions</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <header>
-        <img src="TopNotch_Main2.png" alt="Top Notch Logo" class="main-logo">
-        <h2 class="tagline">Versatile. Reliable. Top Notch.</h2>
-    </header>
+  <header>
+    <img src="images/TopNotch_Main2.png" alt="Top Notch Logo" class="main-logo" />
+    <h2 class="tagline">Versatile. Reliable. Top Notch.</h2>
+  </header>
 
-    <section class="services">
-        <h3>Our Services</h3>
-        <ul>
-            <li><strong>Executive Assistance</strong> – Efficient daily operations, professional correspondence, and administrative organization.</li>
-            <li><strong>Customer Service</strong> – Client engagement, service coordination, and proactive problem-solving.</li>
-            <li><strong>Marketing Support</strong> – Brand communication, digital presence, and promotional outreach.</li>
-        </ul>
-    </section>
+  <section class="services">
+    <h3>Our Services</h3>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="images/ExecAssist.png" alt="Executive Assistance" class="service-icon" />
+        <p>
+          <strong>Executive Assistance</strong><br />
+          Efficient daily operations, professional correspondence, and administrative organization.
+        </p>
+      </div>
+      <div class="service-item">
+        <img src="images/customerassist.png" alt="Customer Service" class="service-icon" />
+        <p>
+          <strong>Customer Service</strong><br />
+          Client engagement, service coordination, and proactive problem-solving.
+        </p>
+      </div>
+      <div class="service-item">
+        <img src="images/marketing.png" alt="Marketing Support" class="service-icon" />
+        <p>
+          <strong>Marketing Support</strong><br />
+          Brand communication, digital presence, and promotional outreach.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section class="contact">
-        <h3>Contact Us</h3>
-        <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact">
-            <p><input type="text" name="name" placeholder="Your Name" required></p>
-            <p><input type="email" name="email" placeholder="Your Email" required></p>
-            <p><textarea name="message" placeholder="Your Message" rows="5" required></textarea></p>
-            <p><button type="submit">Send</button></p>
-        </form>
-    </section>
+  <section class="contact">
+    <h3>Contact Us</h3>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <p><input type="text" name="name" placeholder="Your Name" required /></p>
+      <p><input type="email" name="email" placeholder="Your Email" required /></p>
+      <p><textarea name="message" placeholder="Your Message" rows="5" required></textarea></p>
+      <p><button type="submit">Send</button></p>
+    </form>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Top Notch Solutions. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Top Notch Solutions. All rights reserved.</p>
+  </footer>
 </body>
 </html>
