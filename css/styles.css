@@ -154,6 +154,16 @@ body {
     background-color: #1a1a1a;
 }
 
+.service-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* Contact Section */
 .contact {
     background: linear-gradient(135deg, #4caf50, #1a73e8); /* Green to Blue */
