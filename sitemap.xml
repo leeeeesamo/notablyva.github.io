@@ -7,10 +7,20 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://www.top-notch-solutions.com/</loc>
-  <lastmod>2025-05-19T02:59:45+00:00</lastmod>
-</url>
-
-
+  <url>
+    <loc>https://top-notch-solutions.com/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://top-notch-solutions.com/executive.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://top-notch-solutions.com/customer.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://top-notch-solutions.com/marketing.html</loc>
+    <priority>0.80</priority>
+  </url>
 </urlset>
