@@ -3,9 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Top Notch Solutions</title>
+  <meta name="description" content="Top Notch Virtual Assistance specializes in executive support, customer service, and marketing help for small businesses, startups, and busy professionals." />
+  <meta name="keywords" content="virtual assistant, executive assistant, customer service, marketing support, remote admin, inbox management, calendar scheduling" />
+  <meta name="author" content="Top Notch Solutions" />
+  <meta property="og:title" content="Top Notch Virtual Assistance | Executive & Customer Support" />
+  <meta property="og:description" content="Reliable virtual assistant services for executives, entrepreneurs, and remote teams." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/TopNotch_Main2.png" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Top Notch Virtual Assistance",
+    "url": "https://www.top-notch-solutions.com/",
+    "logo": "images/TopNotch_Main2.png",
+    "sameAs": [
+      "https://facebook.com/TopNotchVA",
+      "https://instagram.com/TopNotchVA",
+      "https://linkedin.com/company/topnotchva"
+    ]
+  }
+  </script>
+  <title>Top Notch Virtual Assistance | Executive & Customer Support</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
   <header>
@@ -17,42 +39,54 @@
     <h3>Our Services</h3>
     <div class="services-grid">
       <div class="service-item">
-        <img src="images/ExecAssist.png" alt="Executive Assistance" class="service-icon" />
-        <p>
-          <strong>Executive Assistance</strong><br />
-          Efficient daily operations, professional correspondence, and administrative organization.
-        </p>
+        <img src="images/executive-assistance.png" alt="Virtual executive assistant helping manage schedule" class="service-icon" />
+        <p><strong>Executive Assistance</strong><br />Efficient daily operations, professional correspondence, and administrative organization.</p>
       </div>
       <div class="service-item">
         <img src="images/CustomerAssist.png" alt="Customer Service" class="service-icon" />
-        <p>
-          <strong>Customer Service</strong><br />
-          Client engagement, service coordination, and proactive problem-solving.
-        </p>
+        <p><strong>Customer Service</strong><br />Client engagement, service coordination, and proactive problem-solving.</p>
       </div>
       <div class="service-item">
         <img src="images/marketing.png" alt="Marketing Support" class="service-icon" />
-        <p>
-          <strong>Marketing Support</strong><br />
-          Brand communication, digital presence, and promotional outreach.
-        </p>
+        <p><strong>Marketing Support</strong><br />Brand communication, digital processes, and promotional outreach.</p>
       </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>“Top Notch Virtual Assistance helped me take control of my schedule — truly a game-changer!”</p>
+      <h4>- Sarah D., Small Business Owner</h4>
+    </div>
+    <div class="testimonial">
+      <p>“Excellent communication and reliable service. I highly recommend them!”</p>
+      <h4>- Mike L., Marketing Director</h4>
+    </div>
+    <div class="testimonial">
+      <p>“Their marketing support and quick turnaround helped us launch faster than we imagined.”</p>
+      <h4>- Lisa B., Startup Co-Founder</h4>
     </div>
   </section>
 
   <section class="contact">
     <h3>Contact Us</h3>
-    <form name="contact" method="POST" data-netlify="true">
+    <form class="contact-form" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact" />
-      <p><input type="text" name="name" placeholder="Your Name" required /></p>
-      <p><input type="email" name="email" placeholder="Your Email" required /></p>
-      <p><textarea name="message" placeholder="Your Message" rows="5" required></textarea></p>
-      <p><button type="submit">Send</button></p>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Top Notch Solutions. All rights reserved.</p>
+    <p>&copy; 2025 Top Notch Virtual Assistance</p>
+    <div class="social">
+      <a href="https://facebook.com/TopNotchVA" target="_blank">Facebook</a> |
+      <a href="https://instagram.com/TopNotchVA" target="_blank">Instagram</a> |
+      <a href="https://linkedin.com/company/topnotchva" target="_blank">LinkedIn</a>
+    </div>
   </footer>
 </body>
 </html>
