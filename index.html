@@ -11,7 +11,6 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/TopNotch_Main2.png" />
   <meta property="og:url" content="https://top-notch-solutions.com" />
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,77 +32,75 @@
     }
   }
   </script>
-
   <title>Top Notch Virtual Assistance | Executive & Customer Support</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 </head>
 <body>
   <header>
-    <img src="images/TopNotch_Main2.png" alt="Top Notch Logo" class="main-logo" />
-    <h2 class="tagline">Versatile. Reliable. Top Notch.</h2>
-    <nav class="topnav">
-      <a href="index.html">Home</a>
-      <a href="executive.html">Executive Assistance</a>
-      <a href="customer.html">Customer Service</a>
-      <a href="marketing.html">Marketing Support</a>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/TopNotch_Main2.png" alt="Top Notch Logo" />
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-assistance.html">Executive Assistance</a></li>
+        <li><a href="customer-service.html">Customer Service</a></li>
+        <li><a href="marketing-support.html">Marketing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="services">
-    <h3>Our Services</h3>
-    <div class="services-grid">
-      <div class="service-item">
-        <img src="images/executive-assistance.png" alt="Virtual executive assistant helping manage schedule" class="service-icon" />
-        <p><strong>Executive Assistance</strong><br />Efficient daily operations, professional correspondence, and administrative organization.</p>
+  <main>
+    <section class="services">
+      <h1>Our Services</h1>
+      <div class="service-grid">
+        <a href="executive-assistance.html" class="service-box">
+          <img src="images/executive-assistance.png" alt="Executive Assistance" />
+          <h2>Executive Assistance</h2>
+        </a>
+        <a href="customer-service.html" class="service-box">
+          <img src="images/CustomerAssist.png" alt="Customer Service" />
+          <h2>Customer Service</h2>
+        </a>
+        <a href="marketing-support.html" class="service-box">
+          <img src="images/marketing.png" alt="Marketing Support" />
+          <h2>Marketing Support</h2>
+        </a>
       </div>
-      <div class="service-item">
-        <img src="images/CustomerAssist.png" alt="Customer Service" class="service-icon" />
-        <p><strong>Customer Service</strong><br />Client engagement, service coordination, and proactive problem-solving.</p>
-      </div>
-      <div class="service-item">
-        <img src="images/marketing.png" alt="Marketing Support" class="service-icon" />
-        <p><strong>Marketing Support</strong><br />Brand communication, digital processes, and promotional outreach.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-      <p>“Top Notch Virtual Assistance helped me take control of my schedule — truly a game-changer!”</p>
-      <h4>- Sarah D., Small Business Owner</h4>
-    </div>
-    <div class="testimonial">
-      <p>“Excellent communication and reliable service. I highly recommend them!”</p>
-      <h4>- Mike L., Marketing Director</h4>
-    </div>
-    <div class="testimonial">
-      <p>“Their marketing support and quick turnaround helped us launch faster than we imagined.”</p>
-      <h4>- Lisa B., Startup Co-Founder</h4>
-    </div>
-  </section>
+    <section id="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial">
+        <p>“Top Notch Virtual Assistance helped me take control of my schedule — truly a game-changer!”</p>
+        <h4>- Sarah D., Small Business Owner</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Excellent communication and reliable service. I highly recommend them!”</p>
+        <h4>- Mike L., Marketing Director</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Their marketing support and quick turnaround helped us launch faster than we imagined.”</p>
+        <h4>- Lisa B., Startup Co-Founder</h4>
+      </div>
+    </section>
 
-	<div class="container">
-	  <h1>Contact Us</h1>
-	  <form target="_blank" action="https://formsubmit.co/lmoore0510@gmail.com" method="POST">
-		<div class="form-group">
-		  <div class="form-row">
-			<div class="col">
-			  <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-			</div>
-			<div class="col">
-			  <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-			</div>
-		  </div>
-		</div>
-		<div class="form-group">
-		  <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-		</div>
-		<button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-	  </form>
-	</div>
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form action="https://formsubmit.co/lmoore0510@gmail.com" method="POST" class="contact-form">
+        <input type="hidden" name="_redirect" value="https://topnotchsolutions.github.io/thank-you.html" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Top Notch Virtual Assistance</p>
