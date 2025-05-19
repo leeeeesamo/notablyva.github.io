@@ -16,78 +16,16 @@ body {
 }
 
 /* Header & Navigation */
-header {
+.header-centered {
   background: linear-gradient(to right, #202f55, #334a94);
-  padding: 30px 10px;
-  color: white;
-}
-.navbar {
-  background-color: #101c57;
-  padding: 12px 24px;
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 30px 0;
+  text-align: center;
 }
 
-.nav-left .brand img {
-  height: 48px;
-}
-
-.nav-right {
-  list-style: none;
-  display: flex;
-  gap: 16px;
-}
-
-.nav-right li a {
-  color: white;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s, transform 0.2s;
-}
-
-.nav-right li a:hover {
-  background-color: #334a94;
-  transform: translateY(-2px);
-}
-
-/* Mobile nav toggle */
-.nav-toggle {
-  display: none;
-}
-
-.nav-toggle-label {
-  display: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .nav-right {
-    display: none;
-    flex-direction: column;
-    background-color: #101c57;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .nav-toggle:checked + .nav-toggle-label + .nav-right {
-    display: flex;
-  }
-
-  .nav-toggle-label {
-    display: block;
-  }
+.main-logo {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Services Section */
