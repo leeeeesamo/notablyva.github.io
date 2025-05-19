@@ -10,29 +10,29 @@
   <meta property="og:description" content="Reliable virtual assistant services for executives, entrepreneurs, and remote teams." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/TopNotch_Main2.png" />
-  <meta property="og:url" content="https://yourdomain.com" />
-	
-	<script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@type": "Organization",
-	  "name": "Top Notch Virtual Assistance",
-	  "url": "https://www.top-notch-solutions.com",
-	  "logo": "https://www.top-notch-solutions.com/images/TopNotch_Main2.png",
-	  "description": "Virtual assistant services specializing in executive support, customer service, and marketing for small businesses and professionals.",
-	  "sameAs": [
-		"https://facebook.com/TopNotchVA",
-		"https://instagram.com/TopNotchVA",
-		"https://linkedin.com/company/topnotchva"
-	  ],
-	  "contactPoint": {
-		"@type": "ContactPoint",
-		"email": "support@top-notch-solutions.com",
-		"contactType": "customer support",
-		"availableLanguage": "English"
-	  }
-	}
-	</script>
+  <meta property="og:url" content="https://top-notch-solutions.com" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Top Notch Virtual Assistance",
+    "url": "https://www.top-notch-solutions.com",
+    "logo": "https://www.top-notch-solutions.com/images/TopNotch_Main2.png",
+    "description": "Virtual assistant services specializing in executive support, customer service, and marketing for small businesses and professionals.",
+    "sameAs": [
+      "https://facebook.com/TopNotchVA",
+      "https://instagram.com/TopNotchVA",
+      "https://linkedin.com/company/topnotchva"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "support@top-notch-solutions.com",
+      "contactType": "customer support",
+      "availableLanguage": "English"
+    }
+  }
+  </script>
 
   <title>Top Notch Virtual Assistance | Executive & Customer Support</title>
   <link rel="stylesheet" href="css/styles.css" />
@@ -43,6 +43,12 @@
   <header>
     <img src="images/TopNotch_Main2.png" alt="Top Notch Logo" class="main-logo" />
     <h2 class="tagline">Versatile. Reliable. Top Notch.</h2>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="executive.html">Executive Assistance</a>
+      <a href="customer.html">Customer Service</a>
+      <a href="marketing.html">Marketing Support</a>
+    </nav>
   </header>
 
   <section class="services">
@@ -81,7 +87,7 @@
 
   <section class="contact">
     <h3>Contact Us</h3>
-    <form class="contact-form" method="POST" data-netlify="true">
+    <form class="contact-form" name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact" />
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />

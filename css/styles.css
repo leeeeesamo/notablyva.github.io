@@ -1,44 +1,52 @@
+/* Base Reset */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f9;
   color: #333;
-  line-height: 1.6;
   text-align: center;
+  line-height: 1.6;
 }
 
+/* Logo Styling */
+.main-logo {
+  max-width: 220px;
+  margin-top: 30px;
+}
+
+/* Header & Navigation */
 header {
-  background-color: #0a0f25;
-  padding: 30px 20px;
+  background: linear-gradient(to right, #202f55, #334a94);
+  padding: 30px 10px;
   color: white;
 }
 
-.main-logo {
-  max-width: 200px;
-  margin-top: 10px;
+.topnav {
+  margin-top: 20px;
 }
 
-.tagline {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-}
-
-nav.breadcrumbs {
-  text-align: left;
-  padding: 10px 20px;
-  background-color: #efefef;
-  font-size: 0.9rem;
-}
-
-nav.breadcrumbs a {
-  color: #1a73e8;
+.topnav a {
+  color: #fff;
   text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+/* Services Section */
 .services {
-  padding: 40px 20px;
-  background-color: #fff;
+  padding: 50px 20px;
+}
+
+.services h3 {
+  font-size: 2em;
+  color: #202f55;
+  margin-bottom: 30px;
 }
 
 .services-grid {
@@ -49,119 +57,98 @@ nav.breadcrumbs a {
 }
 
 .service-item {
-  background-color: #f1f1f1;
-  border-radius: 8px;
-  padding: 20px;
+  background-color: #fff;
+  padding: 25px;
   max-width: 280px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.service-item strong {
-  font-size: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
 
 .service-icon {
-  width: 120px;
-  height: auto;
+  max-width: 80px;
   margin-bottom: 15px;
 }
 
-.service-item a {
-  text-decoration: none;
-  color: inherit;
-}
-
+/* Testimonials */
 #testimonials {
-  background: #f5f5f5;
-  padding: 60px 20px;
-  text-align: center;
+  background-color: #e7ecf7;
+  padding: 40px 20px;
 }
 
 .testimonial {
-  background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  margin: 20px auto;
+  margin: 25px auto;
   max-width: 600px;
-  padding: 20px;
-  border-radius: 8px;
   font-style: italic;
-  font-size: 1.1rem;
-  line-height: 1.6;
 }
 
-.testimonial h4 {
-  margin-top: 15px;
-  font-style: normal;
-  font-weight: bold;
-  color: #333;
-}
-
+/* Contact Section */
 .contact {
   padding: 40px 20px;
-  background: linear-gradient(135deg, #4caf50, #1a73e8);
-  color: white;
-  text-align: center;
-  margin-top: 60px;
+  background-color: #ffffff;
 }
 
 .contact-form {
-  max-width: 600px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 15px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: none;
+input, textarea {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-.contact-form button {
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #1a73e8;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-footer {
-  padding: 20px;
-  background-color: #333;
+button {
+  padding: 12px;
+  background-color: #334a94;
   color: white;
-  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #202f55;
+}
+
+/* Footer */
+footer {
+  background-color: #202f55;
+  color: #fff;
+  padding: 20px;
+  font-size: 0.95em;
 }
 
 footer .social a {
   color: #fff;
-  text-decoration: none;
   margin: 0 10px;
+  text-decoration: none;
 }
 
 footer .social a:hover {
   text-decoration: underline;
 }
-ul.checklist, ul.benefits {
-  text-align: left;
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 0 20px;
-  list-style-type: none;
-}
 
-ul.checklist li::before,
-ul.benefits li::before {
-  content: '';
-  display: inline-block;
-  width: 0.8em;
-  margin-right: 0.5em;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 
-ul.checklist li, ul.benefits li {
-  margin-bottom: 15px;
-  font-size: 1rem;
-  line-height: 1.6;
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .topnav a {
+    margin: 5px 0;
+  }
 }
