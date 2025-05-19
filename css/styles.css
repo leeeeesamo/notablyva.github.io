@@ -8,15 +8,32 @@ body {
   text-align: center;
 }
 
+header {
+  background-color: #0a0f25;
+  padding: 30px 20px;
+  color: white;
+}
+
 .main-logo {
   max-width: 200px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .tagline {
   font-size: 1.4rem;
-  color: #2a2a2a;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+nav.breadcrumbs {
+  text-align: left;
+  padding: 10px 20px;
+  background-color: #efefef;
+  font-size: 0.9rem;
+}
+
+nav.breadcrumbs a {
+  color: #1a73e8;
+  text-decoration: none;
 }
 
 .services {
@@ -47,6 +64,11 @@ body {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
+}
+
+.service-item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #testimonials {
@@ -121,4 +143,25 @@ footer .social a {
 
 footer .social a:hover {
   text-decoration: underline;
+}
+ul.checklist, ul.benefits {
+  text-align: left;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+ul.checklist li::before,
+ul.benefits li::before {
+  content: '';
+  display: inline-block;
+  width: 0.8em;
+  margin-right: 0.5em;
+}
+
+ul.checklist li, ul.benefits li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
 }
