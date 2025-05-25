@@ -16,16 +16,18 @@
   <title>Top Notch Virtual Assistance</title>
 </head>
 <body>
-
-	<header class="header-centered">
-	  <img src="images/TopNotch_Main2.png" alt="Top Notch Virtual Assistance Logo" class="main-logo" />
-	  <nav class="topnav" style="margin-top: 1rem;">
-		<a href="index.html">Home</a>
-		<a href="executive-assistance.html">Executive Assistance</a>
-		<a href="CustomerAssist.html">Customer Service</a>
-		<a href="marketing-support.html">Marketing Support</a>
-	  </nav>
-	</header>
+  <header class="header-centered">
+    <img src="images/TopNotch_Main2.png" alt="Top Notch Virtual Assistance Logo" class="main-logo" />
+    <div class="hamburger-header">
+      <button class="hamburger-btn" onclick="toggleMenu()">☰ Menu</button>
+      <nav class="hamburger-nav" id="hamburgerMenu">
+        <a href="index.html">Home</a>
+        <a href="executive-assistance.html">Executive Assistance</a>
+        <a href="CustomerAssist.html">Customer Service</a>
+        <a href="marketing-support.html">Marketing Support</a>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <h2 style="text-align: center; margin-top: 2rem; color: #222;">Our Services</h2>
@@ -86,5 +88,11 @@
       <a href="https://linkedin.com/company/topnotchva" target="_blank">LinkedIn</a>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("hamburgerMenu").classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
