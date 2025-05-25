@@ -1,5 +1,182 @@
+/* Base Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f9;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
 
-/* Add hamburger-specific styles */
+/* Logo Styling */
+.main-logo {
+  max-width: 220px;
+  margin-top: 30px;
+}
+
+/* Header & Navigation */
+.header-centered {
+  background: linear-gradient(to right, #202f55, #334a94);
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.services h2 {
+  font-size: 2em;
+  color: #202f55;
+  margin-bottom: 30px;
+}
+
+.services p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services ul li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+/* Service Cards */
+.services-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  max-width: 80px;
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #101c57;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+  background-color: #283d9e;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: #e7ecf7;
+  padding: 40px 20px;
+}
+
+.testimonial {
+  margin: 25px auto;
+  max-width: 600px;
+  font-style: italic;
+}
+
+/* Contact Form */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #334a94;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #202f55;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #f0f0f0;
+  font-size: 0.9rem;
+}
+
+.social a {
+  text-decoration: none;
+  color: #202f55;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Menu */
 .hamburger-header {
   text-align: center;
   margin-top: 1rem;
@@ -35,4 +212,22 @@
 
 .hamburger-nav.show {
   display: flex;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .topnav a {
+    margin: 5px 0;
+  }
 }
