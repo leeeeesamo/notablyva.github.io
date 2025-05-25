@@ -28,35 +28,60 @@ body {
   display: block;
 }
 
-/* Services Section */
-.services {
-  padding: 50px 20px;
-}
-
-.services h3 {
-  font-size: 2em;
-  color: #202f55;
-  margin-bottom: 30px;
-}
-
-.services-grid {
+/* New Service Card Layout */
+.services-section {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.service-item {
-  background-color: #fff;
-  padding: 25px;
-  max-width: 280px;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+.service-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
 }
 
 .service-icon {
   max-width: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #101c57;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+  background-color: #283d9e;
 }
 
 /* Testimonials */
