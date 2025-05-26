@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Top Notch Virtual Assistance specializes in executive support, customer service, and marketing help for small businesses, startups, and busy professionals.">
   <meta name="keywords" content="virtual assistant, executive assistant, customer service, marketing support, remote admin, inbox management, calendar scheduling">
   <meta name="author" content="Top Notch Solutions">
@@ -10,14 +10,14 @@
   <meta property="og:description" content="Reliable virtual assistant services for executives, entrepreneurs, and remote teams.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/TopNotch_Main2.png">
-  <meta property="og:url" content="https://top-notch-solutions.com/">
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="images/favicon.ico" />
+  <meta property="og:url" content="https://top-notch-solutions.com">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico">
   <title>Top Notch Virtual Assistance</title>
 </head>
 <body>
   <header class="header-centered">
-    <img src="images/TopNotch_Main2.png" alt="Top Notch Logo" class="main-logo" />
+    <img src="images/TopNotch_Main2.png" alt="Top Notch Logo" class="main-logo">
     <div class="hamburger-header">
       <button class="hamburger-btn" onclick="toggleMenu()">☰ Menu</button>
       <nav class="hamburger-nav" id="hamburgerMenu">
@@ -28,6 +28,7 @@
       </nav>
     </div>
   </header>
+
   <main>
     <h2 style="text-align: center; margin-top: 2rem; color: #222;">Our Services</h2>
     <section class="services-section">
@@ -50,10 +51,44 @@
         <a href="marketing-support.html" class="learn-more">Learn more</a>
       </div>
     </section>
+
+    <section id="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial">
+        <p>“Top Notch Virtual Assistance helped me take control of my schedule — truly a game-changer!”</p>
+        <h4>- Sarah D., Small Business Owner</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Excellent communication and reliable service. I highly recommend them!”</p>
+        <h4>- Mike L., Marketing Director</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Their marketing support and quick turnaround helped us launch faster than we imagined.”</p>
+        <h4>- Lisa B., Startup Co-Founder</h4>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form action="https://formsubmit.co/lmoore0510@gmail.com" method="POST" class="contact-form">
+        <input type="hidden" name="_redirect" value="https://topnotchsolutions.github.io/thank-you.html" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Top Notch Virtual Assistance</p>
+    <div class="social">
+      <a href="https://facebook.com/TopNotchVA" target="_blank">Facebook</a> |
+      <a href="https://instagram.com/TopNotchVA" target="_blank">Instagram</a> |
+      <a href="https://linkedin.com/company/topnotchva" target="_blank">LinkedIn</a>
+    </div>
   </footer>
+
   <script>
     function toggleMenu() {
       document.getElementById("hamburgerMenu").classList.toggle("show");
