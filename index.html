@@ -106,5 +106,27 @@
       document.getElementById("hamburgerMenu").classList.toggle("show");
     }
   </script>
+  
+  <script>
+  let scrollTracked = {50: false, 75: false, 100: false};
+
+  window.addEventListener('scroll', function () {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+
+    [50, 75, 100].forEach(percent => {
+      if (!scrollTracked[percent] && scrollPercent >= percent) {
+        gtag('event', 'scroll_depth', {
+          'event_category': 'Engagement',
+          'event_label': percent + '% Scroll'
+        });
+        scrollTracked[percent] = true;
+      }
+    });
+  });
+</script>
+
+  
 </body>
 </html>
