@@ -1,2 +1,2 @@
-http://top-notch-solutions.com/* https://www.top-notch-solutions.com/:splat 301!
-https://top-notch-solutions.com/* https://www.top-notch-solutions.com/:splat 301!
+http://notablyva.com/* https://www.notablyva.com/:splat 301!
+https://notablyva.com/* https://www.notablyva.com/:splat 301!
