@@ -1,0 +1,2 @@
+http://notablyva.com/* https://www.notablyva.com/:splat 301!
+https://notablyva.com/* https://www.notablyva.com/:splat 301!
