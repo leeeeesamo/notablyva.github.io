@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f7f9;
+  background-color: #f8f9fc;
   color: #333;
   text-align: center;
   line-height: 1.6;
@@ -17,7 +17,7 @@ body {
 
 /* Header & Navigation */
 .header-centered {
-  background: linear-gradient(to right, #202f55, #334a94);
+  background: linear-gradient(to right, #101c57, #334a94);
   padding: 30px 0;
   text-align: center;
 }
@@ -32,7 +32,7 @@ body {
 
 .services h2 {
   font-size: 2em;
-  color: #202f55;
+  color: #101c57;
   margin-bottom: 30px;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .services ul li {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 8px;
@@ -86,7 +86,7 @@ body {
 
 .service-title {
   font-size: 1.3rem;
-  color: #1a1a1a;
+  color: #101c57;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
@@ -109,7 +109,7 @@ body {
 }
 
 .learn-more:hover {
-  background-color: #283d9e;
+  background-color: #334a94;
 }
 
 /* Testimonials */
@@ -159,7 +159,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #202f55;
+  background-color: #101c57;
 }
 
 /* Footer */
@@ -171,7 +171,7 @@ footer {
 
 .social a {
   text-decoration: none;
-  color: #202f55;
+  color: #101c57;
 }
 
 .social a:hover {
