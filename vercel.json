@@ -1,0 +1,29 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/executive-assistance",
+      "destination": "/executive-assistance.html",
+      "permanent": true
+    },
+    {
+      "source": "/customer-service",
+      "destination": "/customer-service.html",
+      "permanent": true
+    },
+    {
+      "source": "/marketing-support",
+      "destination": "/marketing-support.html",
+      "permanent": true
+    }
+  ]
+}
