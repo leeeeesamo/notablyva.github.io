@@ -7,9 +7,5 @@
   gtag('js', new Date());
 
   gtag('config', 'G-PK8VR84T24');
-<<<<<<< HEAD
-</script>
 
-=======
-</script>
->>>>>>> ebf57c2 (updated logo and slogan in index.html)
+
